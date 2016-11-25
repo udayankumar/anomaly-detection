@@ -28,9 +28,11 @@ With sample parameters:
  
 The 3 values after the input dataset are as follows:
 
-`threshold` -  This value decides the sensitivity of the algorithm. Lesser value causes more detections
-`minQueueLen` -  This value decides the minimum number of input values before starting the change detection. Lesser value causes more detections
-`epsilon` -  This value decides the sensitivity of the algorithm - randomised power martingales
+* `threshold` -  This value decides the sensitivity of the algorithm. Lesser value causes more detections
+
+* `minQueueLen` -  This value decides the minimum number of input values before starting the change detection. Lesser value causes more detections
+
+* `epsilon` -  This value decides the sensitivity of the algorithm - randomised power martingales
 
 
 The output consists of  ```<row Label/ID> <M Value>```. If this value is greater than `threshold`, the algorithm has detected an anomaly. 
@@ -40,7 +42,7 @@ The output consists of  ```<row Label/ID> <M Value>```. If this value is greater
 ## Adding in your python code 
 
 1. Download the class file `strangeness.py` in your code folder  
-2. Add the import statement `from strangeness import Strangness
+2. Add the import statement `from strangeness import Strangness`
 3. Create the class object - `strangeness = Strangeness(threshold, minQueueLen, epsilon)`
 4. Next pass the tuple of values (no label) to get the M value - `strangeness.getMValue(valuesTuple)` 
 
