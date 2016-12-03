@@ -36,7 +36,7 @@ if __name__ == "__main__":
     epsilon = parsed.epsilon
     #instantiate the class
     strangeness = Strangeness(L,minInList,epsilon)
-    print  "label" , "Martingale value"
+    print  "label, MartingaleValue"
     header = None 
     with open(parsed.filename,'r') as f:
         for line in f:
@@ -47,6 +47,6 @@ if __name__ == "__main__":
                 val = [float(x) for x in splitV[1:]]
                 #pass the value tuple to get the M value for that tuple
                 M = strangeness.getMValue(val)
-                print label, M
+                print '{},{}'.format(label, str(M))
             else:
                 header = True
