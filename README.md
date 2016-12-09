@@ -54,6 +54,10 @@ The output consists of  ```<row Label/ID> <M Value>```. If this value is greater
 For the above parameters, the code takes around 6 secs to process 4000 points.
 For each new point, the center mean and distance are recalculated for `minQueueLen` points, therefore keeping the queue length short will reduce runtime.
 
+# Parameter Tuning
+
+For each new problem we need to find optimum paramters(`threshold`, `minQueueLen`, and `epsilon`) that results in the lower number of false positive (false detection)  and false negatives (missed detection). I have put up an example of how parameter tuning (finding optimum values for `threshold`, `minQueueLen`, and `epsilon`) can be perfomed using an example dataset comprising of S&P500 opening day values for each day. The date serves as the `label` for this dataset. More details are here 
+
 ### Disclaimer
 
 The code is my personal work and does not in any way represent my employer
