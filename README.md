@@ -56,7 +56,7 @@ For each new point, the center mean and distance are recalculated for `minQueueL
 
 # Parameter Tuning
 
-For each new problem we need to find optimum paramters(`threshold`, `minQueueLen`, and `epsilon`) that results in the lower number of false positive (false detection)  and false negatives (missed detection). I have put up an example of how parameter tuning (finding optimum values for `threshold`, `minQueueLen`, and `epsilon`) can be perfomed using an example dataset comprising of S&P500 opening day values for each day. The date serves as the `label` for this dataset. More details are here 
+For each new problem we need to find optimum paramters(`threshold`, `minQueueLen`, and `epsilon`) that results in the lower number of false positive (false detection)  and false negatives (missed detection). I have put up an example of how parameter tuning (finding optimum values for `threshold`, `minQueueLen`, and `epsilon`) can be perfomed using an example dataset comprising of S&P500 opening day values for each day. The date serves as the `label` for this dataset. More details are [here](https://github.com/udayankumar/anomaly-detection/tree/master/test-data/SP500) 
 
 ### Disclaimer
 
